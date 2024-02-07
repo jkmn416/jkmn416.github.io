@@ -1,0 +1,18 @@
+<html>
+<body>
+
+<div class="container">
+  <textarea id="txt" placeholder="..."></textarea>
+  <button id="fix">fix</button>
+</div>
+
+<script>
+  const fixButton = document.getElementById('fix');
+  fixButton.addEventListener('click', () => {
+    var text = document.getElementById('txt');
+    text.value.replace(" ", "‎")
+  });
+</script>
+
+</body>
+</html>
